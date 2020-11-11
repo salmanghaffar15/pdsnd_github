@@ -140,18 +140,18 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_travel= df['Trip Duration'].sum()
+    total_travel= df['Total Trip Duration'].sum()
     print("The total of trip duration is", total_travel)
 
     # TO DO: display mean travel time
-    mean_travel= df['Trip Duration'].mean()
+    mean_travel= df['Total Trip Duration'].mean()
     print("The mean of trip duration is", mean_travel)
 
     # Also doing some additional work
-    min_travel= df['Trip Duration'].min()
+    min_travel= df['Total Trip Duration'].min()
     print("The least trip duration is", min_travel)
 
-    max_travel= df['Trip Duration'].max()
+    max_travel= df['Total Trip Duration'].max()
     print("The most trip duration is", max_travel)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -204,7 +204,7 @@ def show_raw_data(df):
         else:
             print('\n----------NOW SHOWING SOME ANALYTICS FROM THE DATASET------------\n')
             break
-            
+
 def main():
     while True:
         city, month, day = get_filters()
