@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#list of cities included
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -204,7 +205,8 @@ def show_raw_data(df):
         else:
             print('\n----------NOW SHOWING SOME ANALYTICS FROM THE DATASET------------\n')
             break
-
+		
+# main function
 def main():
     while True:
         city, month, day = get_filters()
